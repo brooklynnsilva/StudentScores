@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
+            lblName = new Label();
             label3 = new Label();
             lstStudentScores = new ListBox();
             btnAdd = new Button();
@@ -50,14 +50,14 @@
             label1.TabIndex = 0;
             label1.Text = "Name:";
             // 
-            // label2
+            // lblName
             // 
-            label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Location = new Point(62, 9);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(270, 27);
-            label2.TabIndex = 1;
+            lblName.BorderStyle = BorderStyle.FixedSingle;
+            lblName.Location = new Point(62, 9);
+            lblName.Margin = new Padding(4, 0, 4, 0);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(270, 27);
+            lblName.TabIndex = 1;
             // 
             // label3
             // 
@@ -89,6 +89,7 @@
             btnAdd.TabIndex = 2;
             btnAdd.Text = "&Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnUpdate
             // 
@@ -99,6 +100,7 @@
             btnUpdate.TabIndex = 3;
             btnUpdate.Text = "&Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnRemove
             // 
@@ -155,11 +157,12 @@
             Controls.Add(btnAdd);
             Controls.Add(lstStudentScores);
             Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblName);
             Controls.Add(label1);
             Name = "frmUpdateStudent";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Update Student Score";
+            Load += frmUpdateStudent_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,7 +170,7 @@
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label lblName;
         private Label label3;
         private ListBox lstStudentScores;
         private Button btnAdd;
