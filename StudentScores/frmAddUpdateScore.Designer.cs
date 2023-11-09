@@ -75,15 +75,18 @@
             // 
             // frmAddUpdateScore
             // 
+            AcceptButton = btnAdd;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnCancel;
             ClientSize = new Size(222, 97);
             Controls.Add(btnAdd);
             Controls.Add(btnCancel);
             Controls.Add(txtScore);
             Controls.Add(label1);
             Name = "frmAddUpdateScore";
-            Text = "frmAddUpdateScore";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Add Score";
             ResumeLayout(false);
             PerformLayout();
         }
