@@ -31,7 +31,7 @@
             label1 = new Label();
             txtScore = new TextBox();
             btnCancel = new Button();
-            btnAdd = new Button();
+            btnAddUpdate = new Button();
             SuspendLayout();
             // 
             // label1
@@ -62,31 +62,34 @@
             btnCancel.TabIndex = 2;
             btnCancel.Text = "&Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
-            // btnAdd
+            // btnAddUpdate
             // 
-            btnAdd.Location = new Point(22, 62);
-            btnAdd.Margin = new Padding(4, 3, 4, 3);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
-            btnAdd.TabIndex = 3;
-            btnAdd.Text = "&Add";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAddUpdate.Location = new Point(22, 62);
+            btnAddUpdate.Margin = new Padding(4, 3, 4, 3);
+            btnAddUpdate.Name = "btnAddUpdate";
+            btnAddUpdate.Size = new Size(75, 23);
+            btnAddUpdate.TabIndex = 3;
+            btnAddUpdate.Text = "&Add";
+            btnAddUpdate.UseVisualStyleBackColor = true;
+            btnAddUpdate.Click += btnAddUpdate_Click;
             // 
             // frmAddUpdateScore
             // 
-            AcceptButton = btnAdd;
+            AcceptButton = btnAddUpdate;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCancel;
             ClientSize = new Size(222, 97);
-            Controls.Add(btnAdd);
+            Controls.Add(btnAddUpdate);
             Controls.Add(btnCancel);
             Controls.Add(txtScore);
             Controls.Add(label1);
             Name = "frmAddUpdateScore";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Score";
+            Load += frmAddUpdateScore_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -96,6 +99,6 @@
         private Label label1;
         private TextBox txtScore;
         private Button btnCancel;
-        private Button btnAdd;
+        private Button btnAddUpdate;
     }
 }
