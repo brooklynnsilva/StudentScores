@@ -1,8 +1,8 @@
 namespace StudentScores
 {
-    public partial class Form1 : Form
+    public partial class frmStudentScores : Form
     {
-        public Form1()
+        public frmStudentScores()
         {
             InitializeComponent();
         }
