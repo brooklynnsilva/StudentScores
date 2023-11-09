@@ -111,6 +111,7 @@
             btnRemove.TabIndex = 4;
             btnRemove.Text = "&Remove";
             btnRemove.UseVisualStyleBackColor = true;
+            btnRemove.Click += btnRemove_Click;
             // 
             // btnClearScores
             // 
@@ -121,6 +122,7 @@
             btnClearScores.TabIndex = 5;
             btnClearScores.Text = "Clear &Scores";
             btnClearScores.UseVisualStyleBackColor = true;
+            btnClearScores.Click += btnClearScores_Click;
             // 
             // btnCancel
             // 
@@ -131,6 +133,7 @@
             btnCancel.TabIndex = 6;
             btnCancel.Text = "&Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnOK
             // 
@@ -141,6 +144,7 @@
             btnOK.TabIndex = 7;
             btnOK.Text = "&OK";
             btnOK.UseVisualStyleBackColor = true;
+            btnOK.Click += btnOK_Click;
             // 
             // frmUpdateStudent
             // 
