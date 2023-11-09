@@ -51,6 +51,7 @@
             btnAddNew.TabIndex = 2;
             btnAddNew.Text = "&Add New";
             btnAddNew.UseVisualStyleBackColor = true;
+            btnAddNew.Click += btnAddNew_Click;
             // 
             // label1
             // 
@@ -81,6 +82,7 @@
             btnUpdate.TabIndex = 3;
             btnUpdate.Text = "&Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
