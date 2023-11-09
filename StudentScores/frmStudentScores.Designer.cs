@@ -91,6 +91,7 @@
             btnDelete.TabIndex = 4;
             btnDelete.Text = "&Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnExit
             // 
@@ -101,6 +102,7 @@
             btnExit.TabIndex = 5;
             btnExit.Text = "E&xit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // label2
             // 
@@ -187,6 +189,7 @@
             Name = "frmStudentScores";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Scores";
+            Load += frmStudentScores_Load;
             ResumeLayout(false);
             PerformLayout();
         }
