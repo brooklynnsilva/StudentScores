@@ -72,6 +72,7 @@
             lstStudents.Name = "lstStudents";
             lstStudents.Size = new Size(229, 79);
             lstStudents.TabIndex = 1;
+            lstStudents.SelectedIndexChanged += lstStudents_SelectedIndexChanged;
             // 
             // btnUpdate
             // 

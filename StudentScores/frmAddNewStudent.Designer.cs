@@ -119,6 +119,7 @@
             btnClear.TabIndex = 4;
             btnClear.Text = "Clear &Scores";
             btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnCancel
             // 
@@ -130,6 +131,7 @@
             btnCancel.TabIndex = 5;
             btnCancel.Text = "&Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnOK
             // 
@@ -141,6 +143,7 @@
             btnOK.TabIndex = 6;
             btnOK.Text = "&OK";
             btnOK.UseVisualStyleBackColor = true;
+            btnOK.Click += btnOK_Click;
             // 
             // frmAddNewStudent
             // 
