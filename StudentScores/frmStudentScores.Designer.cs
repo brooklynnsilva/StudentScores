@@ -169,6 +169,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnExit;
             ClientSize = new Size(351, 208);
             Controls.Add(lblAverage);
             Controls.Add(label6);
@@ -184,6 +185,7 @@
             Controls.Add(btnAddNew);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "frmStudentScores";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Scores";
             ResumeLayout(false);
             PerformLayout();
