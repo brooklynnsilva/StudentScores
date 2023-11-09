@@ -108,6 +108,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "&Add Score";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnClear
             // 
